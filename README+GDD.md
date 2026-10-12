@@ -186,13 +186,14 @@ flowchart TB
 ```
 
 ---
-8. Comunicación y marketing
+<br>8. Comunicación y marketing<br>
 
 Público y mensaje clave: Escapa de la mazmorra usando a tu amigo.<br>
 Canales: redes sociales (Instagram, Youtube), itch.io.<br>
 Calendario: teaser a finales de 2026, devlog semanal todo el año, lanzamiento a mediados de 2027.
 Material: tráiler, capturas, GIF de jugabilidad, press kit.
 Eslogan: «Escapando una pieza a la vez».
+
 ---
 9. Referencias
 > \*Rúbrica — Documento / Referencias.\* Usad un formato consistente (p. ej. APA) y citadlas en el texto con \[1], \[2]...
