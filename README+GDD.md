@@ -25,12 +25,12 @@ Grupo G · Pablo Cordero Vidigal, Javier Vázquez Marinas, Daniel Álvarez Marí
 ---
 1. Introducción
 
-<br>1.1. Concepto del juego
+<br>1.1. Concepto del juego<br>
 
 Jail Break es un juego de plataformas y puzzles para dos jugadores en el que el jugador 1 juega una partida de tetris con el jugador 2 dentro de la cuadrícula, y el jugador 2 intenta que no lo aplasten. La idea principal es que el jugador 1 logre aplastar al jugador 2, y que el jugador 2 utilice las piezas del jugador 1 para escalar hasta la salida, que se encuentra en el tope del área de juego.
 
 ---
-<br>1.2. Propuesta de valor
+<br>1.2. Propuesta de valor<br>
 
 ¿Qué hace diferente a nuestro juego? Que ofrece una experiencia completamente diferente para el jugador 1 y el 2, y un reto único para cada uno.<br>
 Característica diferencial 1: El jugador 1 y el 2 tienen objetivos y controles completamente distintos.<br>
@@ -56,14 +56,14 @@ Representación:	2D<br>
 Licencia:	Apache 2.0<br>
 
 ---
-3. Jugabilidad
-<br>3.1. Objetivo del juego
+3. Jugabilidad<br>
+<br>3.1. Objetivo del juego<br>
    
 El objetivo del jugador 1 es aplastar al jugador 2 antes de llegar hasta el tope de arriba. <br> 
 El objetivo del jugador 2 es llegar hasta arriba usando las piezas del jugador 1.<br> 
 La partida termina cuando el jugador 2 es aplastado o el jugador 1 se queda sin espacio (las piezas llegan hasta arriba).<br>
 
-<br>3.2. Controles
+<br>3.2. Controles<br>
 
 Acciones del Jugador 1<br>
 Mover pieza a la izquierda	`A`<br>
@@ -79,7 +79,7 @@ Moverse a la derecha	`→`<br>
 Saltar	`↑` o `Espacio`<br>
 Pausa	`Esc`<br>
 
-<br>3.3. Mecánicas
+<br>3.3. Mecánicas<br>
 
 <br>3.3.1. Mecánicas principales<br><br>
 Tienda: El jugador 1 cuenta con una tienda visible en la pantalla en la cual puede comprar objetos que permiten fastidiar temporalmente al jugador 2. La "moneda" utilizada son las líneas que hagas.<br>
@@ -89,7 +89,7 @@ Powerups: El jugador 2 cuenta con powerups que aparecen de manera aleatoria por 
 Encasillado de las piezas: Las piezas del jugador 1 bajan a una velocidad de 1 casilla por segundo, y se puede mover por casillas. Esto es al contrario que el jugador 2, que se mueve de manera lineal por el escenario.<br>
 
 
-<br>3.3.2. Objetos y power-ups
+<br>3.3.2. Objetos y power-ups<br>
 
 Jugador 1:<br>
 Debufo de velocidad: Reduce la velocidad del Jugador 2 por 15 s. Cuesta 5 líneas.<br>
@@ -151,20 +151,24 @@ Los bocetos de los personajes se encuentran en el apartado 4.2 y los de las pant
 ---
 
 6. Sonido
-> \*Rúbrica — Sonido:\* música y efectos.
-6.1. Banda sonora
-Pista	Escena	Estilo / ambiente	Fuente / licencia
-AAA	Menú principal	AAA (p. ej. chiptune relajado)	AAA (propia / CC-BY...)
-BBB	Partida	BBB (p. ej. ritmo rápido, 140 BPM)	BBB
-CCC	Victoria / derrota	CCC	CCC
+
+<br>6.1. Banda sonora<br>
+Pista	||  Escena	||  Estilo  ||  Fuente <br><br>
+Menú	|| Menú principal	|| relajado, bit	|| Propia<br>
+Partida ||	En partida ||	ritmo rápido, frenético, bit || Propia<br>
+Final ||	Victoria / derrota ||	épico, desenlace, bit ||	Propia<br>
 
 <br>6.2. Efectos de sonido<br>
-Efecto	Momento en que se reproduce
-Salto	Al pulsar la tecla de salto
-Golpe / impacto	AAA
-Recoger objeto	AAA
-Botones de la interfaz	Al pasar el ratón y al hacer clic
-Cuenta atrás	AAA
+
+Salto ->  Al momento de saltar<br>
+Rotar -> Cuando rotas una pieza<br>
+Posicionar -> Cuando se coloca una pieza<br>
+Compra -> Cuando compras un objeto<br>
+PowerUp -> Cuando se agarra un powerup<br>
+Seleccionar -> Cuando haces click en un botón<br>
+Aplastar -> Cuando una pieza cae/aplasta al jugador 2<br>
+Warning -> Cuando se está cerca de la última fila<br>
+
 ---
 7. Interfaz y diagrama de flujo
 <br>7.2. Diagrama de flujo<br>
