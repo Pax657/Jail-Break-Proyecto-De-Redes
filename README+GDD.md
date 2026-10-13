@@ -117,7 +117,7 @@ El escenario representa una mazmorra o prisión. Es una zona única, no cambia<b
 
 
 ---
-4. Narrativa
+<br>4. Narrativa<br>
 
 <br>4.1. Historia<br>
 El jugador 2 juega como un aventurero atrapado dentro de una mazmorra mágica. El jugador 1 controla a un mago el cual va lanzando piezas para aplastarlo.<br>
