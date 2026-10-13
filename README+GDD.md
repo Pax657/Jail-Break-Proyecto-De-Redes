@@ -126,8 +126,8 @@ El jugador 2 juega como un aventurero atrapado dentro de una mazmorra mágica. E
 5. Imagen y diseño visual<br>
 <br>5.1. Logotipo<br>
 
-![Logotipo del juego](img/logo.png)
-Figura 3. Logotipo del juego. Tipografía: AAA. Concepto: AAA AAA AAA.<br>
+<img src="https://github.com/Pax657/Jail-Break-Proyecto-De-Redes/blob/main/Bocetos%20%2B%20Sprites/logo_1.jpeg" width="250"> <br>
+Figura 1. Logotipo del juego.<br>
 
 <br>5.2. Estilo visual<br>
 
