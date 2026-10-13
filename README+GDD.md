@@ -37,10 +37,6 @@ Característica diferencial 1: El jugador 1 y el 2 tienen objetivos y controles 
 Característica diferencial 2: Es un juego competitivo para dos jugadores en línea.<br>
 Característica diferencial 3: Existen formas de gastar puntos que cada jugador obtiene de maneras diferentes para poder fastidiar al otro jugador.<br>
 
-![Imagen promocional / key art del juego](img/portada_presentacion.png)
-
-Figura 1. Imagen promocional del juego.
-
 ---
 2. Especificaciones básicas
 
@@ -119,8 +115,6 @@ Progresión de la dificultad: a medida que avanza la partida La dificultad progr
 
 El escenario representa una mazmorra o prisión. Es una zona única, no cambia<br>
 
-![Mapa del escenario](img/mapa_escenario.png)
-Figura 2. Mapa del escenario con zonas de aparición, plataformas y obstáculos.
 
 ---
 4. Narrativa
@@ -194,15 +188,14 @@ flowchart TB
 
 Público y mensaje clave: Escapa de la mazmorra usando a tu amigo.<br>
 Canales: redes sociales (Instagram, Youtube), itch.io.<br>
-Calendario: teaser a finales de 2026, devlog semanal todo el año, lanzamiento a mediados de 2027.
-Material: tráiler, capturas, GIF de jugabilidad, press kit.
-Eslogan: «Escapando una pieza a la vez».
+Calendario: teaser a finales de 2026, devlog semanal todo el año, lanzamiento a mediados de 2027.<br>
+Material: tráiler, capturas, GIF de jugabilidad, press kit.<br>
+Eslogan: «Escapando una pieza a la vez».<br>
 
 ---
 9. Referencias
-> \*Rúbrica — Documento / Referencias.\* Usad un formato consistente (p. ej. APA) y citadlas en el texto con \[1], \[2]...
-[1] AAA, A. (Año). Título de la obra. Editorial / Estudio. URL
-[2] BBB, B. (Año). Título del artículo. Revista, volumen(número), páginas. https://doi.org/AAA
-[3] Schell, J. (2019). The Art of Game Design: A Book of Lenses (3.ª ed.). CRC Press.
-[4] Phaser Studio. (s. f.). Phaser 3 Documentation. https://docs.phaser.io
-[5] Recursos de terceros utilizados (sprites, música, fuentes): AAA — autor — licencia — URL.
+
+[1] Phaser Studio. (s. f.). Phaser 3 Documentation. https://docs.phaser.io<br>
+[2] Recursos de terceros utilizados (sprites, música, fuentes): <br>Nombre[jump.mp3](https://github.com/user-attachments/files/33394670/jump.mp3)
+ — autor — licencia — URL.<br>
+Pixel Jump — Lumora_Studios — Uso Gratuito — https://pixabay.com/es/sound-effects/pel%C3%ADculas-y-efectos-especiales-pixel-jump-319167/<br>
