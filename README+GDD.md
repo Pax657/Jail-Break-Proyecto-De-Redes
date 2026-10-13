@@ -192,6 +192,5 @@ Eslogan: «Escapando una pieza a la vez».<br>
 9. Referencias
 
 [1] Phaser Studio. (s. f.). Phaser 3 Documentation. https://docs.phaser.io<br>
-[2] Recursos de terceros utilizados (sprites, música, fuentes): <br>Nombre[jump.mp3](https://github.com/user-attachments/files/33394670/jump.mp3)
- — autor — licencia — URL.<br>
+[2] Recursos de terceros utilizados (sprites, música, fuentes): <br>Nombre — autor — licencia — URL.<br>
 Pixel Jump — Lumora_Studios — Uso Gratuito — https://pixabay.com/es/sound-effects/pel%C3%ADculas-y-efectos-especiales-pixel-jump-319167/<br>
