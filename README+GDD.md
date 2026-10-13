@@ -138,9 +138,6 @@ El juego utiliza un estilo pixelart básico de 32×32 píxeles.<br>
 Representación: 2D, vista lateral.<br>
 Cámara: Fija mostrando todo el escenario.<br>
 
-5.4. Bocetos de personajes y pantallas
-> \*Rúbrica — Imagen / Bocetos:\* interfaz de menú, pantallas y personajes.
-Los bocetos de los personajes se encuentran en el apartado 4.2 y los de las pantallas en el apartado 7.1.
 ---
 
 6. Sonido
