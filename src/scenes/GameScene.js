@@ -19,12 +19,12 @@ export class GameScene extends Phaser.Scene {
         this.load.audio('hit', 'assets/audio/hit.mp3');
 
         // Background music
-        this.load.audio('music', 'assets/audio/music.mp3');
+        this.load.audio('gameMusic', 'assets/audio/music.mp3');
     }
 
     create() {
         // Looping background music
-        this.music = this.sound.add('music', { loop: true, volume: 0.3 });
+        this.music = this.sound.add('gameMusic', { loop: true, volume: 0.3 });
         this.music.play();
 
         // Pause/resume the music with the scene and stop it on exit
