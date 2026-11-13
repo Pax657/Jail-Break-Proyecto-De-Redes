@@ -1,4 +1,4 @@
-# *Jail Break — Game Design Document* 
+# *Dungeon Break — Game Design Document* 
 
 Grupo G · Pablo Cordero Vidigal, Javier Vázquez Marinas, Daniel Álvarez Marín, Patricia López García<br><br>
 
