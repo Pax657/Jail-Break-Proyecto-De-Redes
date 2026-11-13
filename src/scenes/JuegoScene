@@ -33,8 +33,8 @@ export class JuegoScene extends Phaser.Scene {
         //cajas
         //this.add.image(width / 2 * 0.3, height / 2 * 1.1, 'infoJugador1').setScale(0.7);
         //this.add.image(width / 2 * 1.67, height / 2 * 0.8, 'infoJugador2').setScale(0.3);
-        this.createInfoBox('infoJugador1', infoBox.p1, width, height);
-        this.createInfoBox('infoJugador2', infoBox.p2, width, height);
+        this.createInfoBox('infoJugador1', infoBox.boxP1, width, height);
+        this.createInfoBox('infoJugador2', infoBox.boxP2, width, height);
 
 
         // Looping background music
