@@ -12,17 +12,25 @@ export class JuegoScene extends Phaser.Scene {
 
     preload() {
         // Load assets
+
+        //imágenes
         this.load.image('fondo', 'assets/Sprites/Fondo.png')
+        this.load.image('infoJugador1', 'assets/Sprites/Info_Box_Amarillo.png')
+        this.load.image('infoJugador2', 'assets/Sprites/Info_Box_Naranja.png')
 
         // Background music
         this.load.audio('gameMusic', 'assets/audio/music.mp3');
     }
 
     create() {
-        const {width, height} = this.scale;
+        const { width, height } = this.scale;
         //fondo
-        this.add.image(width/2, height/2, 'fondo').setDisplaySize(width, height);
-        
+        this.add.image(width / 2, height / 2, 'fondo').setDisplaySize(width, height);
+
+        //cajas
+        this.add.image(width/2 - 650, height/2 + 50, 'infoJugador1').setScale(0.7);
+        this.add.image(width/2 + 650, height/2 - 100, 'infoJugador2').setScale(0.3);
+
         // Looping background music
         this.music = this.sound.add('gameMusic', { loop: true, volume: 0.3 });
         this.music.play();
