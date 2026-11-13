@@ -5,8 +5,15 @@ export class MenuScene extends Phaser.Scene {
         super('MenuScene');
     }
 
+    preload(){
+        //load assets
+        this.load.audio('music', 'assets/Sonidos/CancionPonponTororon.mp3');
+    }
     create() {
-        this.add.text(400, 150, 'PONG', {
+        this.music = this.sound.add('music', {loop: true, volume: 0.3});
+        this.music.play();
+
+        this.add.text(400, 150, 'JAILBREAK DEMO', {
             fontSize: '64px',
             color: '#ffffff'
         }).setOrigin(0.5);
