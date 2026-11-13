@@ -1,0 +1,45 @@
+import Phaser from 'phaser';
+
+export class JuegoScene extends Phaser.Scene {
+    constructor() {
+        super('JuegoScene');
+    }
+
+    init() {
+        this.players = new Map();
+        this.inputMappings = [];
+    }
+
+    preload() {
+        // Load assets
+        this.load.image('fondo', 'assets/Sprites/Fondo.png')
+
+        // Background music
+        this.load.audio('gameMusic', 'assets/audio/music.mp3');
+    }
+
+    create() {
+        const {width, height} = this.scale;
+        //fondo
+        this.add.image(width/2, height/2, 'fondo').setDisplaySize(width, height);
+        
+        // Looping background music
+        this.music = this.sound.add('gameMusic', { loop: true, volume: 0.3 });
+        this.music.play();
+
+        // Pause/resume the music with the scene and stop it on exit
+        this.events.on('pause', () => this.music.pause());
+        this.events.on('resume', () => this.music.resume());
+        this.events.once('shutdown', () => {
+            this.events.off('pause');
+            this.events.off('resume');
+            this.music.destroy();
+        });
+
+        // Pause with ESC and show the pause menu on top
+        this.input.keyboard.on('keydown-ESC', () => {
+            this.scene.pause();
+            this.scene.launch('PauseScene');
+        });
+    }
+}

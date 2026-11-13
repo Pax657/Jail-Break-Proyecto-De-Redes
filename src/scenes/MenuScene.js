@@ -10,25 +10,27 @@ export class MenuScene extends Phaser.Scene {
         this.load.audio('menuMusic', 'assets/Sonidos/CancionPonponTororon.mp3');
     }
     create() {
+        const {width, height} = this.scale;
+
         this.music = this.sound.add('menuMusic', { loop: true, volume: 0.3 });
         this.music.play();
 
-        this.add.text(400, 150, 'DUNGEON BREAK DEMO', {
-            fontSize: '64px',
+        this.add.text(width/2, 200, 'DUNGEON BREAK DEMO', {
+            fontSize: '128px',
             color: '#ffffff'
         }).setOrigin(0.5);
 
-        const playBtn = this.add.text(400, 320, 'Local Play', {
-            fontSize: '32px',
+        const playBtn = this.add.text(width/2, 500, 'Local Play', {
+            fontSize: '72px',
             color: '#00ff00'
         }).setOrigin(0.5)
             .setInteractive({ useHandCursor: true })
             .on('pointerover', () => playBtn.setStyle({ color: '#ffff00' }))
             .on('pointerout', () => playBtn.setStyle({ color: '#00ff00' }))
-            .on('pointerdown', () => this.scene.start('GameScene'));
+            .on('pointerdown', () => this.scene.start('JuegoScene'));
 
-        const creditsBtn = this.add.text(700, 550, 'Créditos', {
-            fontSize: '24px',
+        const creditsBtn = this.add.text(width/2 + 750, 1000, 'Créditos', {
+            fontSize: '64px',
             color: '#00ff00'
         }).setOrigin(0.5)
             .setInteractive({ useHandCursor: true })

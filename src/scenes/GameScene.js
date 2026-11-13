@@ -15,6 +15,8 @@ export class GameScene extends Phaser.Scene {
         // Load assets
         this.load.image('paddle', 'assets/images/paddle.png')
 
+        this.load.image('fondo', 'assets/Sprites/Fondo.png')
+
         // Hit sound
         this.load.audio('hit', 'assets/audio/hit.mp3');
 

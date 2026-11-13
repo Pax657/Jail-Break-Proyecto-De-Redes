@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JER Sample</title>
+    <title>DUNGEON BREAK</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        #game {
+            position: fixed;
+            inset: 8px;
+            /* quitamos el espacio blanco alrededor, arriba y abajo incluidos */
+        }
+    </style>
 </head>
+
 <body>
+    <div id="game"></div>
     <!-- Webpack automatically injects bundle.js here -->
 </body>
+
 </html>

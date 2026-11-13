@@ -6,25 +6,27 @@ export class PauseScene extends Phaser.Scene {
     }
 
     create() {
-        this.add.rectangle(400, 300, 800, 600, 0x000000, 0.7);
+        const {width, height} = this.scale;
 
-        this.add.text(400, 200, 'Game Paused', { fontSize: '64px' }).setOrigin(0.5);
+        this.add.rectangle(width/2, height/2, width, height, 0x000000, 0.7);
 
-        const resumeBtn = this.add.text(400, 320, 'Resume', { fontSize: '32px', color: '#00ff00' }).setOrigin(0.5)
+        this.add.text(width/2, 200, 'Game Paused', { fontSize: '128px' }).setOrigin(0.5);
+
+        const resumeBtn = this.add.text(width/2, 420, 'Resume', { fontSize: '64px', color: '#00ff00' }).setOrigin(0.5)
             .setInteractive({ useHandCursor: true })
             .on('pointerover', () => resumeBtn.setStyle({ color: '#ffff00' }))
             .on('pointerout', () => resumeBtn.setStyle({ color: '#00ff00' }))
             .on('pointerdown', () => {
                 this.scene.stop();
-                this.scene.resume('GameScene');
+                this.scene.resume('JuegoScene');
             });
 
-        const menuBtn = this.add.text(400, 400, 'Menu', { fontSize: '32px', color: '#00ff00' }).setOrigin(0.5)
+        const menuBtn = this.add.text(width/2, 700, 'Menu', { fontSize: '64px', color: '#00ff00' }).setOrigin(0.5)
             .setInteractive({ useHandCursor: true })
             .on('pointerover', () => menuBtn.setStyle({ color: '#ffff00' }))
             .on('pointerout', () => menuBtn.setStyle({ color: '#00ff00' }))
             .on('pointerdown', () => {
-                this.scene.stop('GameScene');
+                this.scene.stop('JuegoScene');
                 this.scene.start('MenuScene');
             });
     }
