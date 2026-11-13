@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import { Layout } from '../config/layout';
 
 export class JuegoScene extends Phaser.Scene {
     constructor() {
@@ -24,12 +25,17 @@ export class JuegoScene extends Phaser.Scene {
 
     create() {
         const { width, height } = this.scale;
+        const { infoBox } = Layout;
+
         //fondo
         this.add.image(width / 2, height / 2, 'fondo').setDisplaySize(width, height);
 
         //cajas
-        this.add.image(width/2 - 650, height/2 + 50, 'infoJugador1').setScale(0.7);
-        this.add.image(width/2 + 650, height/2 - 100, 'infoJugador2').setScale(0.3);
+        //this.add.image(width / 2 * 0.3, height / 2 * 1.1, 'infoJugador1').setScale(0.7);
+        //this.add.image(width / 2 * 1.67, height / 2 * 0.8, 'infoJugador2').setScale(0.3);
+        this.createInfoBox('infoJugador1', infoBox.p1, width, height);
+        this.createInfoBox('infoJugador2', infoBox.p2, width, height);
+
 
         // Looping background music
         this.music = this.sound.add('gameMusic', { loop: true, volume: 0.3 });
@@ -49,5 +55,11 @@ export class JuegoScene extends Phaser.Scene {
             this.scene.pause();
             this.scene.launch('PauseScene');
         });
+    }
+
+    createInfoBox(key, pos, width, height) {
+        const box = this.add.image(width * pos.x, height * pos.y, key);
+        box.setScale((width * Layout.infoBox.widthRatio) / box.width);
+        return box;
     }
 }
